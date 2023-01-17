@@ -42,9 +42,7 @@ public class LoginPage extends Base{
 		
 		click(element(Locators.xpath, loginButton),"Login button");
 		
-		
-		
-		
+	
 		return new DashboardPage();
 	}
 

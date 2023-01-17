@@ -67,7 +67,7 @@ public class Base extends Reporter implements SeleniumBase{
 		default:
 		
 		}
-		driver.get("https://evv-dashboard.qa-gov.4tellus.net/auth/login");
+		driver.get("<<Enter your url here or read from properties file>>");
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
@@ -297,7 +297,7 @@ public List<WebElement> elements(Locators type, String value) {
 			e.printStackTrace();
 		}
 		WebElement element = wait.until(ExpectedConditions.visibilityOf(ele));
-		element.clear();
+		
 		element.sendKeys(value);
 		
 	}

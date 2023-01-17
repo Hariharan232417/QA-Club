@@ -21,8 +21,8 @@ public class ProjectSpecificMethods extends Base{
 		setNode();
 		
 		new LoginPage()
-		.enterUserName("AutomationTesting")
-		.enterPassword("JgsA%64%3!")
+		.enterUserName("<<EnterUsername here>>")
+		.enterPassword("<<Enter Pwd here>>")
 		.clickLoginButton()
 		.validateUserLogIn();
 	}
